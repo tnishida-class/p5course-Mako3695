@@ -7,16 +7,13 @@
 function setup() {
   createCanvas(100,100);
   background(196);
-  for(let i = 0; i < 9; i++){
-    // 変えるのはここから
-    if(i % 2 == 0){
-      strokeWeight(2);
-    }
-    else{
-      strokeWeight(1);
-    }
-    // ここまでの間になります
-    let x = i * 10 + 10;
-    line(x, 0, x, 100);
-  }
+  //line(10,0,10,100)
+  //line(20,0,20,100)
+  //line(30,0,30,100)
+
+  //for(let x = 10; x < 100; x=x+10){line(x,0,x,100)}自分でやったやつ
+  for(let i=0;i<9;i++){let x=(i+1)*10; line(x,0,x,100);
+  if(i % 2 ==0){strokeweight(2);}
+  else{strokeweight(1);}
+
 }

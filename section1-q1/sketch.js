@@ -1,6 +1,7 @@
 // 練習問題：神戸市のマーク
 function setup(){
-  createCanvas(200, 200);
+
+  createCanvas(400, 400);
   background(255);
 
 
@@ -9,8 +10,8 @@ function setup(){
   strokeWeight(25);
   strokeCap(SQUARE);
   arc(100 + 25, 100, 100, 100, QUARTER_PI * 3, QUARTER_PI * 3 + PI);
-   arc(75, 100, 100, 100,QUARTER_PI+PI, QUARTER_PI);
- }
+  arc(75, 100, 100, 100,QUARTER_PI+PI, QUARTER_PI);
+
   // BLANK[1]
 
   // おまけ：神戸大学のロゴを作りたい人向けに色情報だけ置いておきます
@@ -18,4 +19,12 @@ function setup(){
   const blue = color(14, 47, 146);
   const green = color(22, 131, 46);
   const gray = color(77);
+
+fill(blue);
+noStroke();
+ellipse(300,100,100,100);
+fill(255);
+ellipse(293,93,80,80);
+fill(green);
+ellipse(291,91,75,75);
 }
