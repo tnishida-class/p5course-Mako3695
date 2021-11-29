@@ -19,6 +19,19 @@ function setup(){
   const dx = width / scores.length;
   let px, py; // 線を引くために一つ前の点を覚えておく変数
   for(let i = 0; i < scores.length; i++){
+if(i>0){
+    px = (i-1)*dx
+    py = scores[i-1]*height/100
+    strokeWeight(1)
+    line(px,py,i*dx,scores[i]*height/100)
+    strokeWeight(8)
+    point(px,py)}
     // BLANK[1]
+    else if (i==0){
+    strokeWeight(1)
+    line(i*dx,scores[i]*height/100, (i+1)*dx,scores[i+1]*height/100)
+    strokeWeight(8)
+    point(dx*i,scores[i]*height/100)
   }
+}
 }
